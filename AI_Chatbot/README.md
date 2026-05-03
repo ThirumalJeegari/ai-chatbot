@@ -156,7 +156,7 @@ This project is licensed under the MIT License.
 
 **Thirumal Jeegari**
 📍 India
-📧 [your-email@example.com](mailto:your-email@example.com)
+📧 [thirumaljeegari21@example.com](mailto:thirumaljeegari21@example.com)
 
 ---
 
