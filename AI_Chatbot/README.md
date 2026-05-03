@@ -1,73 +1,163 @@
-# 🤖 AI Chatbot Project Workflow
-📌 <Project_Overview>
-Generative AI Chatbot built using Streamlit + Groq API
-Real-time conversational AI web application
-Secure API-based LLM integration
-🚀 <Workflow>
-1️⃣ <Application_Launch>
+# 🤖 AI Chatbot (Streamlit + Groq API)
+
+## 🚀 Overview
+
+This project is an **AI-powered chatbot** that can understand user queries and generate intelligent responses using a Large Language Model (LLM).
+
+It is built with **Python**, **Streamlit**, and the **Groq API**, providing a simple and interactive web interface for real-time conversations.
+
+---
+
+## 🎯 Features
+
+* 💬 Interactive chatbot UI
+* ⚡ Fast responses using Groq LLM
+* 🧠 Context-aware conversations
+* 🎨 Clean and minimal Streamlit interface
+* 🔐 Secure API key handling using environment variables
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** Streamlit
+* **Backend:** Python
+* **LLM API:** Groq
+* **Language Model:** llama3-8b-8192
+
+---
+
+## 📂 Project Structure
+
+```
+AI-Chatbot/
+│
+├── app.py              # Main Streamlit app
+├── llm_helper.py       # Handles API calls
+├── config.py (optional)# Centralized client setup
+├── requirements.txt    # Dependencies
+└── README.md           # Project documentation
+```
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+```
+git clone https://github.com/your-username/ai-chatbot.git
+cd ai-chatbot
+```
+
+### 2. Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+---
+
+## 🔑 Setup API Key
+
+### Windows (PowerShell)
+
+```
+$env:GROQ_API_KEY="your_api_key_here"
+```
+
+### Windows (CMD)
+
+```
+set GROQ_API_KEY=your_api_key_here
+```
+
+---
+
+## ▶️ Run the Application
+
+```
 streamlit run app.py
-Starts Streamlit UI
-Opens chatbot in browser
-2️⃣ <Environment_Setup>
-Loads .env file
-Retrieves GROQ_API_KEY
-Secure API connection established with Groq
-3️⃣ <Session_Initialization>
-Uses st.session_state.messages
-Stores conversation history
-Defines system prompt:
-Professional tone
-Structured responses
-AI assistant behavior
-4️⃣ <User_Input_Handling>
-User sends message via chat input
-Stored as:
-{"role": "user", "content": "message"}
-5️⃣ <LLM_API_Request>
-Sends full chat history to model
-Model used: llama-3.1-8b-instant
-Includes:
-User input
-Chat history
-System instructions
-6️⃣ <AI_Response_Generation>
-LLM processes input
-Generates contextual response
-Returns:
-{"role": "assistant", "content": "response"}
-7️⃣ <UI_Rendering>
-Streamlit displays:
-User message
-AI response
-Real-time chat experience
-8️⃣ <Memory_Management>
-Stores all messages in session state
-Maintains conversation context
-Enables continuous chat flow
-9️⃣ <Reset_Chat>
-Clears session memory
-Restarts fresh conversation
-🧠 <Architecture_Flow>
-User Input
-   ↓
-Streamlit UI
-   ↓
-Session Memory
-   ↓
-Groq LLM API
-   ↓
-AI Response
-   ↓
-Streamlit Output
-🔥 <Key_Features>
-💬 Real-time AI chat interface
-🧠 Context-aware memory system
-⚡ Fast LLM inference
-🔐 Secure API handling (.env)
-🔄 Reset chat functionality
-🧑‍💼 Professional system prompt
-🎯 <Use_Cases>
-AI Personal Assistant
-Customer Support Bot
-Learning Assistant
-GenAI Portfolio Project
+```
+
+---
+
+## 💡 Usage
+
+1. Enter your message in the input box
+2. Click **Send**
+3. Get AI-generated responses instantly
+
+---
+
+## 🧪 Example Prompt
+
+```
+Explain Python decorators in simple terms
+```
+
+---
+
+## ⚠️ Common Errors & Fixes
+
+### ❌ `client not defined`
+
+✔ Ensure `client` is initialized in `llm_helper.py`
+
+---
+
+### ❌ API Key Error
+
+✔ Make sure `GROQ_API_KEY` is set correctly
+
+---
+
+### ❌ Model Decommissioned
+
+✔ Use a valid model:
+
+```
+llama3-8b-8192
+```
+
+---
+
+## 📌 Future Improvements
+
+* Chat history memory
+* User authentication
+* Multi-language support
+* Voice input/output
+* Deployment on cloud (Streamlit Cloud / AWS)
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🙌 Acknowledgements
+
+* Groq API
+* Streamlit
+* Open-source community
+
+---
+
+## 📧 Contact
+
+**Thirumal Jeegari**
+📍 India
+📧 [your-email@example.com](mailto:your-email@example.com)
+
+---
+
+⭐ If you like this project, give it a star on GitHub!
